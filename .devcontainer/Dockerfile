@@ -19,6 +19,8 @@ RUN npm install -g react-native-cli
 # Clean up
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
+RUN useradd -ms /bin/bash vscode
+
 # Set the working directory
 WORKDIR /workspace
 
