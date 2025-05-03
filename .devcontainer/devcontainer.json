@@ -1,16 +1,20 @@
 {
   "name": "React Native Expo App",
   "dockerFile": "Dockerfile",
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
+  "customizations": {
+    "vscode": {
+      "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      "msjsdiag.vscode-react-native",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "ms-azuretools.vscode-docker",
+      "mhutchie.git-graph"
+    ]
+    }
   },
-  "extensions": [
-    "msjsdiag.vscode-react-native",
-    "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint",
-    "ms-azuretools.vscode-docker",
-    "mhutchie.git-graph"
-  ],
   "postCreateCommand": "npm install",
   "remoteUser": "vscode"
 }
